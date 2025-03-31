@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.hilt) // Apply Hilt plugin
+    alias(libs.plugins.hilt.android) // Apply Hilt plugin
     kotlin("kapt")
 // Enable
 
@@ -65,6 +65,8 @@ dependencies {
 
     implementation(libs.hilt.android) // Hilt core dependency
     kapt(libs.hilt.compiler) // Hilt annotation processor
+
+    implementation(libs.androidx.recyclerview)
 
 
 }
